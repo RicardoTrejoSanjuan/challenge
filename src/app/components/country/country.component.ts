@@ -10,19 +10,15 @@ import { RequestService } from '../../services/request.service';
 })
 export class CountryComponent implements OnInit {
 
-  public countryList: Array<Country>;
-  public con = [
-    {key:"AL", name:"Alabama"},
-    {key:"AK", name:"Alaska"},
-    {key:"AZ", name:"Arizona"},
-    {key:"AR", name:"Arkansas"},
-    {key:"CA", name:"California"},
-    {key:"CO", name:"Colorado"},
-    {key:"CT", name:"Connecticut"}
-  ]
+  public countries: Country[];
+  public selectedCountry: string[];
+
   constructor(
     private _requestService: RequestService
-  ) { }
+  ) { 
+    this.countries = [];
+    this.selectedCountry = [];
+  }
 
   ngOnInit() {
     this._requestService.getCountries().subscribe(
@@ -37,8 +33,7 @@ export class CountryComponent implements OnInit {
 
   populateCountry (data) {
     for (let [key, value] of Object.entries(data)) {
-      // var element = new Country(key, value.toString())
-      // this.countryList.push(element);
+      this.countries.push(new Country(key, value.toString()));
     };
   }
 }

@@ -6,7 +6,13 @@ $config: mat-typography-config();
 
 @include mat-core();
 
-@include angular-material-theme($my-theme);
+.my-theme {
+  @include angular-material-theme($my-theme);
+}
+
+.my-dark-theme {
+  @include angular-material-theme($my-dark-theme);
+}
 
 body {
   font-family: mat-font-family($config);
@@ -24,16 +30,6 @@ mat-sidenav-container, mat-sidenav-content, mat-sidenav {
 mat-sidenav {
   width: 250px;
 }
-
-// a {
-  // text-decoration-color: mat-color($my-theme-primary);
-  // color: mat-color($my-theme-primary);
-// }
-
-// a:hover,
-// a:active {
-//   color: lightgray;
-// }
 
 .navigation-items {
   list-style: none;
@@ -62,8 +58,3 @@ mat-sidenav {
 .card {
   width: 80%;
 }
-
-// .container {
-// padding: 20px;
-// width: 100%;
-// }

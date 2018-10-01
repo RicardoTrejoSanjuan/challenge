@@ -15,12 +15,13 @@ $my-theme: mat-light-theme(
 );
 
 // dark configuration
-$my-dark-theme-primary: mat-palette($mat-lime, 500);
-$my-dark-theme-accent:  mat-palette($mat-lime, 500, A200, A400);
-$my-dark-theme-warn:    mat-palette($mat-red, 500);
+$my-dark-theme-primary: mat-palette($mat-purple);//mat-palette($mat-lime, 500);
+$my-dark-theme-accent:  mat-palette($mat-pink);//mat-palette($mat-lime, 500, A200, A400);
+$my-dark-theme-warn:    mat-palette($mat-red);//mat-palette($mat-red, 500);
 
 $my-dark-theme: mat-dark-theme(
     $my-dark-theme-primary,
     $my-dark-theme-accent,
     $my-dark-theme-warn
 );
+

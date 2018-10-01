@@ -8,12 +8,27 @@
         </mat-card-title>
         <mat-card-content>
           <mat-form-field>
-            <mat-select [(value)]="selected">
-              <mat-option *ngFor="let countre of con" [value]="countre.key">
-                {{ countre.name }}
+            <mat-select placeholder="Select Country"
+            name="ddwCountry"
+            [(ngModel)]="selectedCountry"
+            multiple
+            required
+            #selectionModel="ngModel">
+              <multiselect [model]="selectionModel" [values]="countries"> </multiselect>
+              <mat-option *ngFor="let country of countries" [value]="country">
+                {{ country.name }}
               </mat-option>
             </mat-select>
-          </mat-form-field>
+          </mat-form-field> 
+
+          <p *ngIf="selectedCountry.length > 0"><strong>Selected value:</strong>
+            <mat-nav-list>
+              <mat-list-item *ngFor="let country of selectedCountry">
+                {{ country.name }}
+              </mat-list-item>
+            </mat-nav-list>
+          </p>
+
         </mat-card-content>
       </mat-card>
     </div>
