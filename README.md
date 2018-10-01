@@ -6,22 +6,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Clone proyect
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+First, it will include the usual prerequisites such as Nodejs and NPM. You will also need to install Git so that you can execute the following command:
 
-## Build
+> git clone  https://github.com/RicardoTrejoSanjuan/challenge
+> cd challenge
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+After executing this command, give it a minute or two and it will effectively download the quickstart project to your specified project folder.
 
-## Running unit tests
+## Run "npm install"
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> npm install
 
-## Running end-to-end tests
+Give it some time, and in a few moments you'll have your node_modules folder and everything else ready to go!
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+> npm run start
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
