@@ -11,9 +11,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 First, it will include the usual prerequisites such as Nodejs and NPM. You will also need to install Git so that you can execute the following command:
 
 > git clone  https://github.com/RicardoTrejoSanjuan/challenge
-> cd challenge
 
 After executing this command, give it a minute or two and it will effectively download the quickstart project to your specified project folder.
+
+> cd challenge
 
 ## Run "npm install"
 
